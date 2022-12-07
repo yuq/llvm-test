@@ -1,7 +1,7 @@
 #!makefile
 
 LLVMCONFIG ?= /usr/lib/llvm-15/bin/llvm-config
-LIBS    := $(shell $(LLVMCONFIG) --libs)
+LIBS    := -lLLVM
 LDFLAGS := $(shell $(LLVMCONFIG) --ldflags)
 CFLAGS  := $(shell $(LLVMCONFIG) --cflags)
 
